@@ -2,15 +2,15 @@
 
 В проекте используются 2 скрипта:
 
-- `tools/sim_udp_to_ros_bridge.py` — принимает UDP-данные из Unity (порт `9000`) и публикует в ROS2.
-- `tools/send_cmd_vel_udp.py` — отправляет команды движения роботу в Unity (порт `9001`).
+- `sim_udp_to_ros_bridge.py` — принимает UDP-данные из Unity (порт `9000`) и публикует в ROS2.
+- `send_cmd_vel_udp.py` — отправляет команды движения роботу в Unity (порт `9001`).
 
 ## 1) Поток данных Unity -> ROS2
 
 Запуск:
 
 ```bash
-python tools/sim_udp_to_ros_bridge.py --listen-port 9000 --verbose
+python sim_udp_to_ros_bridge.py --listen-port 9000 --verbose
 ```
 
 Проверка топиков:
